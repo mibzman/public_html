@@ -1,0 +1,167 @@
+<style>
+ul { /*simple */
+    background-color: azure;
+}
+
+H1.mainTitle { /*class */
+	text-align: center
+}
+
+#testId { /*id*/
+	size: 3
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	font-variant: initial
+	font-style: normal;
+	font-weight: normal
+}
+
+a:visited { /* psudo-class*/
+    color: #9932CC;
+}
+
+#cssBlock {
+	text-decoration: underline;
+	text-align: left;
+}
+
+#ul1{
+	list-style-type: square;
+}
+
+#ul2{
+	list-style-image: url('halbullet.png');
+        list-style-position: outside;
+}
+
+#mainImg {
+	padding-left: 90px;
+	margin-top: 70px;
+}
+
+@keyframes test {
+    0%   {left:0px;}
+    50%  {left:1000px;}
+    100% {left:0px; top:0px;}
+}
+
+div.animated {
+	position: relative;
+	-webkit-animation-name: test;
+	animation-name: test;
+	-webkit-animation-duration: 20s;
+}
+
+</style>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<H1 class="mainTitle" style="color:green;">
+			Welcome to Sam Borick's Page!
+		</H1>
+		<H3>
+			Internet Systems Programming <br>
+			Assignment #1 <br>
+			An Elegant Web Page  
+		</H3>
+		<H4>
+                        I'm not feeling particularly creative, and this will be more helpful to me later
+                </H4>
+
+	</head>
+	<body>
+	<span>
+		<p>
+			This is a Paragraph <br>
+			with a line break
+		</p>
+		<blockquote>
+			WOOOOOOOAH, A BLOCKQUOE
+		</blockquote>
+		<font id="testId">Size 3 arial</font> <br>
+		<font size="2" color="Comic Sans">Comic Sans</font> <br>
+		<font face="verdana" color="green">NEAT, Green text</font><br>
+		<hr>
+	</span>
+		<p id="cssBlock">
+			This is a set of text that is not modified in the html.  all of the tmodifications to this block of text will be done with css.  that's so cool!   wow!
+		</p>
+		<img id="mainImg" src = "https://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png" height = "402" width= "602"> <br>
+		<a href="https://en.wikipedia.org/wiki/Test_card" target="_blank">Click here for more info about test cards</a> <br>
+
+	<div>
+	<ul id="ul1">
+		<li>This</li>
+		<li>is</li>
+		<li>an</li>
+		<li>unordered</li>
+		<li>list</li>
+	</ul> <br>
+
+	<ul id="ul2">
+                <li>This</li>
+                <li>is</li>
+                <li>another</li>
+                <li>unordered</li>
+                <li>list</li>
+        </ul> <br>
+
+
+	 <ol>
+                <li>This</li>
+                <li>is</li>
+                <li>an</li>
+                <li>ordered</li>
+                <li>list</li>
+        </ol>
+
+	<table>
+		<tr>
+			<th>wow</td>
+			<th>it's</td>
+			<th>a</td>
+			<th>table</td>
+		</tr>
+		<tr>
+                        <td>cool</td>
+                        <td>it's</td>
+                        <td>got</td>
+                        <td>rows</td>
+                </tr>
+		<tr>
+                        <td>and</td>
+                        <td>there's</td>
+                        <td>some</td>
+                        <td>columns</td>
+                </tr>
+
+
+	</table>
+	</div>
+	<br>
+	<form action="action_page.php">
+  		username: <input type="text" name="username"><br>
+		password: <input type="password" name="password"><br>
+		<input type="submit" value="Submit">
+	</form>
+	<br>
+
+	<audio controls>
+		<source src="mobyrunon.mp3" type="audio/mpeg">
+		Your browser does not support this audio.
+	</audio>
+
+	<br>
+	<hr>
+	<br>
+
+	<video width="1080" height="720" controls>
+ 		<source src="SampleVideo_720x480_10mb.mp4" type="video/mp4">
+			Your browser does not support video
+	</video>
+	<br>
+
+	<div class="animated" width= 20>
+		<img src="halbullet.png" >
+	</div>
+			
+	</body>
+</html>
