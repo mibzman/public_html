@@ -22,10 +22,10 @@
     $statement = $_POST["statement"];
     
     // If any of numerical values are blank, set them to zero
-    /*if ($id == "") $id = 0;
+    if ($id == "") $id = 0;
     if ($miles == "") $miles = 0.0;
     if ($year == "") $year = 0;
-    if ($state == "") $state = 0;*/
+    if ($state == "") $state = 0;
 
 // Connect to MySQL
 $db = mysql_connect("db1.cs.uakron.edu:3306", "sb205", "elengomat");
@@ -43,16 +43,16 @@ if (!$er) {
 
 // print "<b> The action is: </b> $action <br />";
 
-var_dump( $_POST );
-print "action: " . $action;
+//var_dump( $_POST );
+//print "action: " . $action;
 if($action == "display")
     $query = "";
 else if ($action == "insert")
     $query = "insert into friends values($id, '$first', '$last', $phone, '$address')";
 else if ($action == "update")
-    $query = "update Corvettes set Body_style = '$type', Miles = $miles, Year = $year, State = $state where Vette_id = $id";
+    $query = "update friends set first = '$first', last = $last, phone = $phone, address = $address where id = $id";
 else if ($action == "delete")
-    $query = "delete from Corvettes where Vette_id = $id";
+    $query = "delete from friends where id = $id";
 else if ($action == "user")
     $query = $statement;
 
